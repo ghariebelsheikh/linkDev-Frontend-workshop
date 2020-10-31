@@ -1,0 +1,56 @@
+<div class="container-fluid px-5">
+  <div class="row">
+    <div class="col-12">
+      <header class="section-header">
+        <h3 class="section-header-text">News Details</h3>
+        </header>
+        <div class="card">
+          <img [src]="article?.urlToImage" class="card-img-top" />
+          <div>
+            <span class="float-right mt-3 mr-3">
+              <span class="mr-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="29"
+                  height="27.35"
+                  viewBox="0 0 29 27.35"
+                >
+                  <path
+                    id="ic_favorite_border_24px"
+                    d="M23.025,3A8.589,8.589,0,0,0,16.5,6.115,8.589,8.589,0,0,0,9.975,3,8.01,8.01,0,0,0,2,11.2c0,5.634,4.93,10.225,12.4,17.2l2.1,1.953,2.1-1.967C26.07,21.422,31,16.831,31,11.2A8.01,8.01,0,0,0,23.025,3Zm-6.38,23.177-.145.149-.145-.149C9.453,19.753,4.9,15.5,4.9,11.2A5.026,5.026,0,0,1,9.975,5.981,5.668,5.668,0,0,1,15.151,9.5h2.711a5.633,5.633,0,0,1,5.162-3.517A5.026,5.026,0,0,1,28.1,11.2C28.1,15.5,23.547,19.753,16.645,26.177Z"
+                    transform="translate(-2 -3)"
+                    fill="#8dc043"
+                  />
+                </svg>
+              </span>
+      
+              <svg
+                id="ic_share_24px"
+                xmlns="http://www.w3.org/2000/svg"
+                width="26.399"
+                height="29.215"
+                viewBox="0 0 26.399 29.215"
+              >
+                <path
+                  id="ic_share_24px-2"
+                  data-name="ic_share_24px"
+                  d="M25,22.65a4.271,4.271,0,0,0-2.875,1.129L11.668,17.693a4.8,4.8,0,0,0,.132-1.027,4.8,4.8,0,0,0-.132-1.027L22.007,9.612A4.39,4.39,0,1,0,20.6,6.4a4.8,4.8,0,0,0,.132,1.027L10.392,13.454a4.4,4.4,0,1,0,0,6.424l10.442,6.1a4.138,4.138,0,0,0-.117.953A4.282,4.282,0,1,0,25,22.65Z"
+                  transform="translate(-3 -2)"
+                  fill="#8dc043"
+                />
+              </svg>
+            </span>
+          </div>
+          <div class="card-body">
+            <p class="card-subtitle mb-2 text-muted">{{ category?.name }}</p>
+            <h5 class="card-title">{{ article?.title }}</h5>
+            <p class="card-text">
+              {{ article?.content }}
+            </p>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<app-related-topics></app-related-topics>

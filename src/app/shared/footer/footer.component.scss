@@ -1,0 +1,25 @@
+footer {
+  & #navbar {
+    & .btn-subscribe {
+      background-color: #8dc043;
+    }
+    & .form-control {
+      padding: 25px;
+    }
+    & h5 {
+      // font-family: ;
+    }
+    & a {
+      color: #4a4a4a;
+    }
+
+    color: #4a4a4a;
+    background-color: #d9d9d9;
+  }
+
+  & #copyRight {
+    background-color: #168d91;
+    padding: 10px;
+    padding: 25px;
+  }
+}

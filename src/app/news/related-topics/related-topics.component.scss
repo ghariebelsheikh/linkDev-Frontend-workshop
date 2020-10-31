@@ -1,0 +1,36 @@
+.img-container {
+  height: 541px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+
+  .topics-image {
+    width: 100%;
+    height: 100%;
+  }
+
+  .topic-title {
+    height: 220px;
+    width: 96%;
+    background-color: rgba($color: #fff, $alpha: 0.9);
+    border-radius: 10px;
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .topic-header {
+      font-size: 37px;
+      font-weight: 700;
+    }
+  }
+
+  .details-wrapper {
+    color: #8dc043;
+  }
+}

@@ -1,0 +1,74 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~@ng-select/ng-select/themes/default.theme.css";
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+.btn-main {
+    background-color: #8dc043;
+    color: #fff;
+    display: inline-block;
+    align-self: center;
+}
+
+.text-green {
+    color: #8dc043;
+}
+
+.section-header {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+    .section-header-text {
+        font-size: 60px;
+        font-weight: 600;
+    }
+    .header-btn {
+        font-size: 20px;
+        &:hover {
+            text-decoration: none;
+            color: #8dc043;
+        }
+    }
+}
+
+.carousel {
+    .carousel-item {
+        height: 683px;
+        position: relative;
+        .carousel-caption {
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            display: flex !important;
+            flex-direction: column;
+            justify-content: center;
+            right: 30%;
+            left: 30%;
+            h3 {
+                font-size: 60px;
+                font-weight: 600;
+            }
+            p {
+                font-size: 32px;
+                font-weight: 400;
+            }
+        }
+        &::after {
+            content: '';
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            position: absolute;
+            background-color: rgba(000, 000, 000, 0.2);
+        }
+    }
+    
+    .carousel-indicators {
+        li {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+    }
+}

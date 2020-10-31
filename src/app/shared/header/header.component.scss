@@ -1,0 +1,16 @@
+.navbar {
+    background-color: #038896;
+    height: 100px;
+    .nav-right-links-wrapper {
+        .nav-right-link:not(:last-child) {
+            margin-right: 15px;
+            &.user-wrapper {
+                span {
+                    color: #fff;
+                    font-size: 14px;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

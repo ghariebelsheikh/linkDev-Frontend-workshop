@@ -1,0 +1,73 @@
+<div class="card">
+  <img [src]="article?.urlToImage" class="card-img-top" />
+  <div>
+    <span class="float-right mt-3 mr-3">
+      <span class="mr-3">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="29"
+          height="27.35"
+          viewBox="0 0 29 27.35"
+        >
+          <path
+            id="ic_favorite_border_24px"
+            d="M23.025,3A8.589,8.589,0,0,0,16.5,6.115,8.589,8.589,0,0,0,9.975,3,8.01,8.01,0,0,0,2,11.2c0,5.634,4.93,10.225,12.4,17.2l2.1,1.953,2.1-1.967C26.07,21.422,31,16.831,31,11.2A8.01,8.01,0,0,0,23.025,3Zm-6.38,23.177-.145.149-.145-.149C9.453,19.753,4.9,15.5,4.9,11.2A5.026,5.026,0,0,1,9.975,5.981,5.668,5.668,0,0,1,15.151,9.5h2.711a5.633,5.633,0,0,1,5.162-3.517A5.026,5.026,0,0,1,28.1,11.2C28.1,15.5,23.547,19.753,16.645,26.177Z"
+            transform="translate(-2 -3)"
+            fill="#8dc043"
+          />
+        </svg>
+      </span>
+
+      <svg
+        id="ic_share_24px"
+        xmlns="http://www.w3.org/2000/svg"
+        width="26.399"
+        height="29.215"
+        viewBox="0 0 26.399 29.215"
+      >
+        <path
+          id="ic_share_24px-2"
+          data-name="ic_share_24px"
+          d="M25,22.65a4.271,4.271,0,0,0-2.875,1.129L11.668,17.693a4.8,4.8,0,0,0,.132-1.027,4.8,4.8,0,0,0-.132-1.027L22.007,9.612A4.39,4.39,0,1,0,20.6,6.4a4.8,4.8,0,0,0,.132,1.027L10.392,13.454a4.4,4.4,0,1,0,0,6.424l10.442,6.1a4.138,4.138,0,0,0-.117.953A4.282,4.282,0,1,0,25,22.65Z"
+          transform="translate(-3 -2)"
+          fill="#8dc043"
+        />
+      </svg>
+    </span>
+  </div>
+  <div class="card-body">
+    <h2
+      class="card-title"
+      [routerLink]="['/news', article?.id]"
+      [queryParams]="{ categoryId: article.sourceID }"
+    >
+      {{ article?.title | truncate: 50 }}
+    </h2>
+    <h3 class="card-tag">
+      <span class="badge badge-secondary">News</span>
+    </h3>
+    <p class="card-text">
+      {{ article?.content | truncate: 100 }}
+    </p>
+    <p class="card-date">
+      <span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="18.763"
+          height="20.848"
+          viewBox="0 0 18.763 20.848"
+        >
+          <path
+            id="ic_date_range_24px"
+            d="M9.254,11.381H7.17v2.085H9.254Zm4.17,0H11.339v2.085h2.085Zm4.17,0H15.509v2.085h2.085Zm2.085-7.3H18.636V2H16.551V4.085H8.212V2H6.127V4.085H5.085A2.075,2.075,0,0,0,3.01,6.17L3,20.763a2.084,2.084,0,0,0,2.085,2.085H19.678a2.091,2.091,0,0,0,2.085-2.085V6.17A2.091,2.091,0,0,0,19.678,4.085Zm0,16.678H5.085V9.3H19.678Z"
+            transform="translate(-3 -2)"
+            fill="#8dc043"
+          />
+        </svg>
+      </span>
+      <span>
+        {{ article?.publishedAt | date: "fullDate" }}
+      </span>
+    </p>
+  </div>
+</div>

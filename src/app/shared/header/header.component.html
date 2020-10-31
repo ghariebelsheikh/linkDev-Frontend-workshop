@@ -1,0 +1,199 @@
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container-fluid px-5">
+    <button class="btn btn-link" (click)="toggleSidebar()">
+      <svg
+        *ngIf="!toggleSideBar"
+        id="Menu"
+        xmlns="http://www.w3.org/2000/svg"
+        width="32.428"
+        height="16.214"
+        viewBox="0 0 32.428 16.214"
+      >
+        <g id="Menu_2_">
+          <path
+            id="Path_1"
+            data-name="Path 1"
+            d="M31.415,2.027H1.013A1.013,1.013,0,1,1,1.013,0h30.4a1.013,1.013,0,1,1,0,2.027Z"
+            transform="translate(0)"
+            fill="#fff"
+          />
+          <path
+            id="Path_2"
+            data-name="Path 2"
+            d="M1.013,112h30.4a1.013,1.013,0,0,1,0,2.027H1.013a1.013,1.013,0,0,1,0-2.027Z"
+            transform="translate(0 -104.906)"
+            fill="#fff"
+          />
+          <path
+            id="Path_3"
+            data-name="Path 3"
+            d="M161.013,224h20.268a1.013,1.013,0,1,1,0,2.027H161.013a1.013,1.013,0,0,1,0-2.027Z"
+            transform="translate(-160 -209.813)"
+            fill="#fff"
+          />
+        </g>
+      </svg>
+      <svg
+        *ngIf="toggleSideBar"
+        xmlns="http://www.w3.org/2000/svg"
+        width="24.364"
+        height="24.457"
+        viewBox="0 0 24.364 24.457"
+      >
+        <g id="Menu_2_" transform="translate(-4.032 11.168)">
+          <path
+            id="Path_1"
+            data-name="Path 1"
+            d="M31.415,2.027H1.013A1.013,1.013,0,1,1,1.013,0h30.4a1.013,1.013,0,1,1,0,2.027Z"
+            transform="translate(5.466 -11.168) rotate(45)"
+            fill="#fff"
+          />
+          <path
+            id="Path_2"
+            data-name="Path 2"
+            d="M1.013,112h30.4a1.013,1.013,0,0,1,0,2.027H1.013a1.013,1.013,0,0,1,0-2.027Z"
+            transform="translate(-75.163 -67.34) rotate(-45)"
+            fill="#fff"
+          />
+        </g>
+      </svg>
+    </button>
+
+    <a class="navbar-brand ml-5" routerLink="/">
+      <img
+        src="../../../assets/images/link-logo.png"
+        width="70"
+        height="40"
+        alt=""
+        loading="lazy"
+      />
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div
+      class="collapse navbar-collapse justify-content-end nav-right-links-wrapper"
+      id="navbarSupportedContent"
+    >
+      <!-- <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                    Search
+                </button>
+            </form> -->
+
+      <div class="nav-right-link search-wrapper">
+        <button class="btn btn-link">
+          <svg
+            id="ic_search_24px"
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            viewBox="0 0 30 30"
+          >
+            <g id="search" transform="translate(0 0)">
+              <g
+                id="Group_8025"
+                data-name="Group 8025"
+                transform="translate(0 0)"
+              >
+                <path
+                  id="Path_51533"
+                  data-name="Path 51533"
+                  d="M29.817,28.049,21.1,19.335A11.9,11.9,0,1,0,19.335,21.1l8.715,8.715a.625.625,0,0,0,.884,0l.884-.884A.625.625,0,0,0,29.817,28.049Zm-17.942-6.8a9.375,9.375,0,1,1,9.375-9.375A9.385,9.385,0,0,1,11.875,21.25Z"
+                  transform="translate(0 0)"
+                  fill="#fff"
+                />
+              </g>
+            </g>
+          </svg>
+        </button>
+      </div>
+
+      <div class="nav-right-link notification-wrapper">
+        <button class="btn btn-link">
+          <svg
+            id="notification_1_"
+            data-name="notification (1)"
+            xmlns="http://www.w3.org/2000/svg"
+            width="27.848"
+            height="31"
+            viewBox="0 0 27.848 31"
+          >
+            <path
+              id="Path_51492"
+              data-name="Path 51492"
+              d="M138.02,421.625a4.693,4.693,0,0,1-4.688-4.688.938.938,0,0,1,1.875,0,2.812,2.812,0,0,0,5.625,0,.938.938,0,0,1,1.875,0A4.693,4.693,0,0,1,138.02,421.625Zm0,0"
+              transform="translate(-125.52 -390.625)"
+              fill="#fff"
+            />
+            <path
+              id="Path_51493"
+              data-name="Path 51493"
+              d="M22.812,86.5H2.187A2.188,2.188,0,0,1,.765,82.65a.864.864,0,0,1,.1-.075A8.4,8.4,0,0,0,3.75,76.238V72.75A8.76,8.76,0,0,1,12.5,64a3.765,3.765,0,0,1,.616.038.937.937,0,1,1-.308,1.849,1.966,1.966,0,0,0-.309-.011A6.883,6.883,0,0,0,5.625,72.75v3.487A10.281,10.281,0,0,1,2,84.076c-.019.015-.035.029-.055.043a.309.309,0,0,0-.066.194.316.316,0,0,0,.312.312H22.812a.316.316,0,0,0,.313-.312.3.3,0,0,0-.068-.194c-.019-.014-.035-.027-.054-.043a10.278,10.278,0,0,1-3.629-7.839V74.875a.937.937,0,1,1,1.875,0v1.362a8.4,8.4,0,0,0,2.889,6.341.911.911,0,0,1,.1.073A2.187,2.187,0,0,1,22.812,86.5Zm0,0"
+              transform="translate(0 -59.25)"
+              fill="#fff"
+            />
+            <path
+              id="Path_51494"
+              data-name="Path 51494"
+              d="M268.512,6.25A6.25,6.25,0,1,1,262.262,0,6.25,6.25,0,0,1,268.512,6.25Zm0,0"
+              transform="translate(-240.664)"
+              fill="#8dc043"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <div class="nav-right-link user-wrapper">
+        <button class="btn btn-link">
+          <img
+            src="../../../assets/images/user-img.png"
+            height="60"
+            width="60"
+            title="user-img"
+            alt="user-img"
+          />
+          <span>Username</span>
+        </button>
+      </div>
+
+      <div class="nav-right-link setting-wrapper">
+        <button class="btn btn-link">
+          <svg
+            id="settings"
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            viewBox="0 0 30 30"
+          >
+            <path
+              id="Path_51536"
+              data-name="Path 51536"
+              d="M15.941,30H14.059A2.765,2.765,0,0,1,11.3,27.238V26.6a12.111,12.111,0,0,1-1.881-.781l-.451.451a2.762,2.762,0,0,1-3.906,0L3.728,24.941a2.762,2.762,0,0,1,0-3.906l.451-.451A12.112,12.112,0,0,1,3.4,18.7H2.762A2.765,2.765,0,0,1,0,15.941V14.059A2.765,2.765,0,0,1,2.762,11.3H3.4a12.115,12.115,0,0,1,.781-1.881l-.451-.451a2.762,2.762,0,0,1,0-3.906L5.059,3.728a2.761,2.761,0,0,1,3.906,0l.451.451A12.123,12.123,0,0,1,11.3,3.4V2.762A2.765,2.765,0,0,1,14.059,0h1.883A2.765,2.765,0,0,1,18.7,2.762V3.4a12.111,12.111,0,0,1,1.881.781l.451-.451a2.762,2.762,0,0,1,3.906,0l1.331,1.331a2.762,2.762,0,0,1,0,3.906l-.451.451A12.112,12.112,0,0,1,26.6,11.3h.637A2.765,2.765,0,0,1,30,14.059v1.883A2.765,2.765,0,0,1,27.238,18.7H26.6a12.115,12.115,0,0,1-.781,1.881l.451.451a2.762,2.762,0,0,1,0,3.906l-1.331,1.331a2.761,2.761,0,0,1-3.906,0l-.451-.451A12.122,12.122,0,0,1,18.7,26.6v.637A2.765,2.765,0,0,1,15.941,30ZM9.71,23.975A10.36,10.36,0,0,0,12.4,25.09a.879.879,0,0,1,.659.851v1.3a1,1,0,0,0,1,1h1.883a1,1,0,0,0,1-1v-1.3a.879.879,0,0,1,.659-.851,10.36,10.36,0,0,0,2.685-1.115.879.879,0,0,1,1.069.135l.919.919a1,1,0,0,0,1.419,0L25.029,23.7a1,1,0,0,0,0-1.419l-.92-.92a.879.879,0,0,1-.135-1.069A10.358,10.358,0,0,0,25.09,17.6a.879.879,0,0,1,.851-.659h1.3a1,1,0,0,0,1-1V14.059a1,1,0,0,0-1-1h-1.3a.879.879,0,0,1-.851-.659A10.36,10.36,0,0,0,23.975,9.71a.879.879,0,0,1,.135-1.069l.919-.919a1,1,0,0,0,0-1.419L23.7,4.971a1,1,0,0,0-1.419,0l-.92.92a.879.879,0,0,1-1.069.135A10.36,10.36,0,0,0,17.6,4.911a.879.879,0,0,1-.659-.851v-1.3a1,1,0,0,0-1-1H14.059a1,1,0,0,0-1,1v1.3a.879.879,0,0,1-.659.851A10.36,10.36,0,0,0,9.71,6.025.879.879,0,0,1,8.641,5.89l-.919-.919a1,1,0,0,0-1.419,0L4.971,6.3a1,1,0,0,0,0,1.419l.92.92A.879.879,0,0,1,6.025,9.71,10.358,10.358,0,0,0,4.911,12.4a.879.879,0,0,1-.851.659h-1.3a1,1,0,0,0-1,1v1.883a1,1,0,0,0,1,1h1.3a.879.879,0,0,1,.851.659A10.36,10.36,0,0,0,6.025,20.29a.879.879,0,0,1-.135,1.069l-.919.919a1,1,0,0,0,0,1.419L6.3,25.029a1,1,0,0,0,1.419,0l.92-.92A.883.883,0,0,1,9.71,23.975Z"
+              transform="translate(0 0)"
+              fill="#fff"
+            />
+            <path
+              id="Path_51537"
+              data-name="Path 51537"
+              d="M151.336,158.073a6.736,6.736,0,1,1,6.736-6.736A6.744,6.744,0,0,1,151.336,158.073Zm0-11.659a4.922,4.922,0,1,0,4.922,4.922A4.928,4.928,0,0,0,151.336,146.414Z"
+              transform="translate(-136.336 -136.336)"
+              fill="#fff"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+<app-menu *ngIf="toggleSideBar"></app-menu>

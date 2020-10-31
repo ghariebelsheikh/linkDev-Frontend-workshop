@@ -1,0 +1,20 @@
+<section class="container-fluid px-5">
+  <div class="row">
+    <div class="col-12">
+      <header class="section-header">
+      <h3 class="section-header-text">Latest News</h3>
+      <button class="header-btn btn btn-link text-green" routerLink="/news">
+        View All 
+        <span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="26.125" height="11" viewBox="0 0 26.125 11">
+            <path id="ic_trending_flat_24px" d="M29.125,13.5,23.625,8v4.125H3v2.75H23.625V19Z" transform="translate(-3 -8)" fill="#8dc043"/>
+          </svg>    
+        </span>
+      </button>
+    </header>
+    </div>
+    <div *ngFor="let article of articles" class="col-lg-4 col-md-6 col-sm-12">
+      <app-news-card [article]="article"></app-news-card>
+    </div>
+  </div>
+</section>
